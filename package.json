@@ -1,0 +1,23 @@
+{
+  "name": "wikistack1",
+  "version": "1.0.0",
+  "description": "App for Fullstack workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmags/Wikistack1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmags/Wikistack1/issues"
+  },
+  "homepage": "https://github.com/jmags/Wikistack1#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}
