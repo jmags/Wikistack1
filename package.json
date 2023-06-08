@@ -4,7 +4,8 @@
   "description": "App for Fullstack workshop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/jmags/Wikistack1#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "html-template-tag": "^3.2.0",
     "morgan": "^1.10.0"
   }
 }
