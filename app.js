@@ -16,7 +16,8 @@ app.use('/wiki', wikiRouter);
 
 app.get("/", (req, res, next) => {
     try {
-        res.send('walrus');
+        // res.send('walrus'); 
+        res.redirect('/wiki');
     } catch (err) {
         next(err);
     }

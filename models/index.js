@@ -18,6 +18,12 @@ const Page = db.define('page', {
     status: {
         type: Sequelize.ENUM('open', 'closed')
     }
+    }, {
+        hooks: {
+                beforeValidate: (page) => {
+                page.slug = nowYouHaveTwoSlugs(page.title);
+            }
+        }
 });
 
 const User = db.define('user', {
@@ -31,5 +37,13 @@ const User = db.define('user', {
     }
 });
 
+
+function nowYouHaveTwoSlugs (title) {
+    // Removes all non-alphanumeric characters from title
+    // And make whitespace underscore
+    // TODO: To lowercase.
+    // TODO: Split and join instead of regex.
+    return title.replace(/\s+/g, '_').replace(/\W/g, '');
+  }
 
 module.exports = { db, Page, User };  
